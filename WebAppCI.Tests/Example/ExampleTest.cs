@@ -25,9 +25,8 @@ namespace WebAppCI.Tests.Example
         public static IWebDriver browser;
         public const string HOME_PAGE_MAIN_SUBJECT = "Home Page - Main";
 
-        [TestMethod]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.Description("bing.com")]
-        public void TestMethod()
+        [TestMethod()]
+        public void when_user_go_to_bing_com()
         {
             browser = CreateChromeBrowserInstance();
 
