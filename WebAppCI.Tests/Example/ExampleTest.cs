@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Threading;
+using Machine.Specifications;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
@@ -22,8 +23,10 @@ namespace WebAppCI.Tests.Example
         public const string FIREFOX_PORTABLE_PATH = @"\..\..\..\tools\FirefoxPortable\FirefoxPortable.exe"; 
 #endif
         public static IWebDriver browser;
+        public const string HOME_PAGE_MAIN_SUBJECT = "Home Page - Main";
 
         [TestMethod]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.Description("bing.com")]
         public void TestMethod()
         {
             browser = CreateChromeBrowserInstance();
