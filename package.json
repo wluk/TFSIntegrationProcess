@@ -1,0 +1,13 @@
+{
+  "name": "WebAppCI",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/wluk/TFSIntegrationProcess.git",
+  "author": "Łukasz Wielopolski <lukasz.wielopolski@softwaremind.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "nodejs": "^0.0.0",
+    "npm": "^4.6.1"
+  }
+}
