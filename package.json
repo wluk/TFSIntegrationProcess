@@ -8,7 +8,7 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-util": "^3.0.8",
-    "nodejs": "6.9.4",
+    "nodejs": "^0.0.0",
     "npm": "^4.6.1"
   }
 }

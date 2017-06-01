@@ -1425,7 +1425,7 @@ node-gyp@~3.6.0:
     tar "^2.0.0"
     which "1"
 
-nodejs@6.9.4:
+nodejs@^0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/nodejs/-/nodejs-0.0.0.tgz#4722fa2e18ac4eb73a42ae16d01e3584a12b7531"
 
