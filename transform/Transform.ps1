@@ -6,6 +6,27 @@
 # .NOTES
 # #>
 
+function SetTypeTransformFiles($typesConfig, $sourceDir) {
+    foreach ($type in $typesConfig) {
+        SetTransformFiles $type $sourceDir
+    }
+}
+
+function SetTransformFiles($typeConfig, $sourceDir) {
+    if (Test-Path -Path $sourceDir) {
+        $filesConfig = Get-ChildItem -filter "$typeConfig.*.config" -File
+
+        Write-Host "In path: $sourceDir found: $filesConfig"
+
+        foreach ($file in $filesConfig) {
+            TransformConfigFiles "$sourceDir\$typeConfig.config" $file.FullName
+        }
+    }
+    else {
+        Write-Host "$sourceDir path don't exist"
+    }
+}
+
 function TransformConfigFiles($configPath, $transformPath) {
     try {
         $XmlTransformPath = $PSScriptRoot + "\Microsoft.Web.XmlTransform.dll"
@@ -22,55 +43,38 @@ function TransformConfigFiles($configPath, $transformPath) {
         }
 
         $doc.Save($transformPath + "_NEW");
+        Write-Host "Transform $transformPath to $configPath"
     }
     catch {
         Write-Output $Error[0].Exception
     }
 }
 
-function SetTransformFiles($typeConfig) {
-    if (Test-Path -Path $sourceDir) {
-        $filesConfig = Get-ChildItem -filter "$typeConfig.*.config" -File
-
-        foreach ($file in $filesConfig) {
-            TransformConfigFiles "$sourceDir\$typeConfig.config" $file.FullName
-        }
-    }
-}
-
-function SetTypeTransformFiles($typesConfig) {
-    foreach ($type in $typesConfig) {
-        SetTransformFiles $type
-    }
-}
-
-# $configPath = $PSScriptRoot + "\AppSettings.config"
-# $transformPath = $PSScriptRoot + "\AppSettings.CC-SystemTest.config"
-
-# XmlDocTransform $configPath $transformPath
-
-
 #Transforms source_binaries with configuration related to target environment
 
 Write-Host "Transforms source_binaries with configuration related to target environment"
 
-# #Web
-# $webConfigType = @("AppSettings", "log4net", "Web")
-# #$Website
-# $sourceDir = "C:\Users\luwe\Desktop\transform"
-# SetTypeTransformFiles $webConfigType
+#Web
+$webConfigType = @("AppSettings", "log4net", "Web")
+#$Website
+$dirPath = $env:Build_SourcesDirectory + "\APP\WEB"
+Write-Host "Start transform WEB, fransform config: $webConfigType on path: $dirPath"
+SetTypeTransformFiles $webConfigType $dirPath
 
-# #Server
-# $serverConfigType = @("AppSettings", "log4net", "Yellow.Server.exe", "quartz-job")
-# #$Website\Server
-# $sourceDir = "C:\Users\luwe\Desktop\transform"
-# SetTypeTransformFiles $webConfigType
+#Server
+$serverConfigType = @("AppSettings", "log4net", "Yellow.Server.exe", "quartz-job")
+#$Website\Server
+$dirPath = $env:Build_SourcesDirectory + "\APP\SERVER"
+Write-Host "Start transform SERVER, fransform config: $webConfigType on path: $dirPath"
+SetTypeTransformFiles $webConfigType $dirPath
 
-# #TestClient
-# $testClientConfigType = @("Web")
-# #$WebsiteTestClient
-# $sourceDir = "C:\Users\luwe\Desktop\transform"
+#TestClient
+$testClientConfigType = @("Web")
+#$WebsiteTestClient
+$dirPath = $env:Build_SourcesDirectory + ".\TEST\CLIENT"
+Write-Host "Start transform TestClient, fransform config: $webConfigType on path: $dirPath"
+SetTypeTransformFiles $webConfigType $dirPath
 
-Write-Host $env:Build_SourcesDirectory 
+Write-Host $env:Build_SourcesDirectory
 
 SetTypeTransformFiles $webConfigType
