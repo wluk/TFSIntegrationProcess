@@ -3,41 +3,41 @@
   <add key="MigrationCompareTag" value="OLD" />
   <add key="AllThreadsCulture" value="en-GB" />
   <add key="App_CIFASDictionariesRelativePath" value="CIFASDictionaries"/>
-  <add key="App_EnvironmentName" value="CC-SystemTest"/>
+  <add key="App_EnvironmentName" value="Debug"/>
   <add key="App_EnvironmentComponent" value="Server"/>
-  <add key="App_EnvironmentDescriptor" value="NODDLECLT"/>
-  <add key="App_NoddleDomainName" value="https://dev.noddle.co.uk"/>
-  <add key="App_NoddleHostName" value="dev.noddle.co.uk"/>
+  <add key="App_EnvironmentDescriptor" value="NODDLESMD"/>
+  <add key="App_NoddleDomainName" value="http://yellow.localhost.com:1162"/>
+  <add key="App_NoddleHostName" value="yellow.localhost.com"/>
   <add key="App_NoddlePageName" value="Noddle"/>
   <add key="App_NoddleAccountName" value="Noddle account"/>
   <add key="App_NoddleThinFileAccountName" value="Noddle Credit Coach"/>
-  <add key="App_NoddleContactEmail" value="contact@noddle.co.uk"/>
-  <add key="App_NoddleDisputeEmail" value="dispute@noddle.co.uk"/>
-  <add key="App_NoddlePasswordEmail" value="password@noddle.co.uk"/>
-  <add key="App_NoddleNoReplyEmail" value="noreply@noddle.co.uk"/>
+  <add key="App_NoddleContactEmail" value="contact@softwaremind.pl"/>
+  <add key="App_NoddleDisputeEmail" value="dispute@softwaremind.pl"/>
+  <add key="App_NoddlePasswordEmail" value="password@softwaremind.pl"/>
+  <add key="App_NoddleNoReplyEmail" value="noreply@softwaremind.pl"/>
   <add key="App_NoddleSignature" value="The Noddle Team"/>
   <add key="App_NoddleShowSocialMediaInEmail" value="true"/>
-  <add key="App_HalifaxDomainName" value="https://dev.halifaxcreditchecker.co.uk"/>
-  <add key="App_HalifaxHostName" value="dev.halifaxcreditchecker.co.uk"/>
+  <add key="App_HalifaxDomainName" value="http://yellow-halifax.localhost.com:1162"/>
+  <add key="App_HalifaxHostName" value="yellow-halifax.localhost.com"/>
   <add key="App_HalifaxPageName" value="Halifax Credit Checker"/>
   <add key="App_HalifaxPageNameWithPoweredSuffix" value="Halifax Credit Checker, powered by Noddle"/>
   <add key="App_HalifaxAccountName" value="Halifax Credit Checker account"/>
   <add key="App_HalifaxThinFileAccountName" value="Halifax Credit Builder account"/>
-  <add key="App_HalifaxContactEmail" value="halifaxcontact@noddle.co.uk"/>
-  <add key="App_HalifaxDisputeEmail" value="dispute@noddle.co.uk"/>
-  <add key="App_HalifaxPasswordEmail" value="halifaxpassword@noddle.co.uk"/>
-  <add key="App_HalifaxNoReplyEmail" value="halifaxnoreply@noddle.co.uk"/>
+  <add key="App_HalifaxContactEmail" value="halifaxcontact@softwaremind.pl"/>
+  <add key="App_HalifaxDisputeEmail" value="dispute@softwaremind.pl"/>
+  <add key="App_HalifaxPasswordEmail" value="halifaxpassword@softwaremind.pl"/>
+  <add key="App_HalifaxNoReplyEmail" value="halifaxnoreply@softwaremind.pl"/>
   <add key="App_HalifaxSignature" value="The Noddle Team on behalf of Halifax"/>
   <add key="App_HalifaxShowSocialMediaInEmail" value="false"/>
-  <add key="App_RoyalMailDomainName" value="https://test.lovemyid.royalmail.com/"/>
-  <add key="App_RoyalMailHostName" value="test.lovemyid.royalmail.com"/>
+  <add key="App_RoyalMailDomainName" value="http://yellow-royalmail.localhost.com:1162"/>
+  <add key="App_RoyalMailHostName" value="yellow-royalmail.localhost.com"/>
   <add key="App_RoyalMailPageName" value="Love My ID"/>
   <add key="App_RoyalMailPageNameWithPoweredSuffix" value="Love My ID"/>
   <add key="App_RoyalMailAccountName" value="Love My ID account"/>
-  <add key="App_RoyalMailContactEmail" value="subscriberservices@royalmail.com"/>
-  <add key="App_RoyalMailDisputeEmail" value="dispute@test.lovemyid.royalmail.com"/>
-  <add key="App_RoyalMailPasswordEmail" value="subscriberservices@royalmail.com"/>
-  <add key="App_RoyalMailNoReplyEmail" value="noreply.test.lovemyid@royalmail.com"/>
+  <add key="App_RoyalMailContactEmail" value="royalmailsubscriberservices@softwaremind.pl"/>
+  <add key="App_RoyalMailDisputeEmail" value="royalmaildispute@softwaremind.pl"/>
+  <add key="App_RoyalMailPasswordEmail" value="royalmailsubscriberservices@softwaremind.pl"/>
+  <add key="App_RoyalMailNoReplyEmail" value="royalmailnoreply@softwaremind.pl"/>
   <add key="App_RoyalMailSignature" value="The Love My ID team"/>
   <add key="App_RoyalMailShowSocialMediaInEmail" value="false"/>
   <add key="App_SavPageName" value="aqua Credit Checker"/>
@@ -46,8 +46,8 @@
   <add key="App_SavThinFileAccountName" value="Noddle Credit Coach account"/>
   <add key="App_TescoPageNameWithPoweredSuffix" value="Noddle, brought to you by Tesco Bank"/>
   <add key="App_TescoAccountName" value="Tesco Bank Noddle account"/>
-  <add key="Service_DisplayPrefix" value="Yellow"/>
-  <add key="Service_ServiceName" value="Yellow_Debug_Service"/>
+  <add key="Service_DisplayPrefix" value="Yellow (CL_DR-2)"/>
+  <add key="Service_ServiceName" value="Yellow_CL_DR_2_Service"/>
   <add key="CreditReport_DayOfMonthToSwitchAccount" value="1" />
   <add key="CreditReport_DayOfMonthToChangePasswordForDormantAccount" value="15" />
   <add key="CreditReport_EnableAutomaticApiCredentialsUpdates" value="false" />
@@ -106,7 +106,7 @@
   <add key="SendWebMonitoringNoAlertNotification_AlertsBatchLimit" value="2000" />
   <add key="SendWebWatchNoAlertNotification_DaysWithoutAlertsToGetNotification" value="30"/>
   <add key="SendWebWatchNoAlertNotification_AlertsBatchLimit" value="2000" />
-  <add key="Sav_SenderEmailAddress" value="aquaCreditChecker@noddle.co.uk"/>
+  <add key="Sav_SenderEmailAddress" value="aquaCreditChecker@softwaremind.pl" />
   <add key="Sav_TokensToProcessLimit" value="10000" />
   <add key="Sav_SendChaser1AfterDays" value="14" />
   <add key="Sav_SendChaser2AfterDaysFrom1" value="14" />
@@ -127,18 +127,18 @@
   <add key="Tesco_CreateTokensCommitAfterCount" value="100" />
   <add key="Nationwide_MaxDaysOfTokenValidity" value="90" />
   <add key="Nationwide_CreateTokensCommitAfterCount" value="100" />
-  <add key="ConfigEncryption_Enabled" value="true"/>
+  <add key="ConfigEncryption_Enabled" value="false" />
   <add key="CopyConsentStatementsFromUsers_BatchSize" value="2000" />
   <add key="CopyConsentStatementsFromUsers_NumberOfBatches" value="5" />
-  <add key="WorldPay_BaseUrl" value="****"/>
-  <add key="WorldPay_ServiceKey" value="****"/>
+  <add key="WorldPay_BaseUrl" value="https://api.worldpay.com/v1" />
+  <add key="WorldPay_ServiceKey" value="T_S_50ce44d0-1757-4a64-9397-8ef07a40d5a4" />
   <add key="ProcessSubscriptions_DaysToWaitForRetry" value="2" />
   <add key="ProcessSubscriptions_MaxTechnicalProblemsBeforeStopingJob" value="100" />
   <add key="CardExpiry_FirstNotificationDaysBeforeExpiryCount" value="14" />
   <add key="Api_BaseAddress" value="http://localhost:8080/" />
   <add key="CardExpiry_SecondNotificationDaysBeforeExpiryCount" value="3" />
   <add key="WebMonitoring_ApiProviderEnabled" value="true" />
-  <add key="WebMonitoring_ApiProviderServerUrl" value="****"/>
+  <add key="WebMonitoring_ApiProviderServerUrl" value="http://localhost:51049/C6/DarkWebTransaction" />
   <add key="WebMonitoring_ApiProviderPartnerId" value="44" />
   <add key="WebMonitoring_ApiProviderDefaultUserFirstName" value="first_name" />
   <add key="WebMonitoring_ApiProviderDefaultUserLastName" value="last_name" />

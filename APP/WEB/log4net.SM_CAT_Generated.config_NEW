@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<log4net>
+  <appender name="ApplicationServer" type="log4net.Appender.RollingFileAppender,log4net" >
+    <param name="File" value="..\Logs\Server1\Yellow.ApplicationServer.log" />
+    <param name="AppendToFile" value="true" />
+    <param name="RollingStyle" value="Date" />
+    <param name="DatePattern" value="yyyy.MM.dd" />
+    <param name="StaticLogFileName" value="true" />
+    <layout type="log4net.Layout.PatternLayout,log4net">
+      <param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="ServiceBizagiAppender" type="log4net.Appender.RollingFileAppender,log4net" >
+    <param name="File" value="..\Logs\Server1\Service_BizAgi\Yellow.Server.Service_BizAgi.log" />
+    <param name="AppendToFile" value="true" />
+    <param name="RollingStyle" value="Date" />
+    <param name="DatePattern" value="yyyy.MM.dd" />
+    <param name="StaticLogFileName" value="true" />
+    <layout type="log4net.Layout.PatternLayout,log4net">
+      <param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="BizAgiAppender" type="log4net.Appender.RollingFileAppender,log4net" >
+    <param name="File" value="..\Logs\Server1\BizAgi\Yellow.Server.BizAgi.log" />
+    <param name="AppendToFile" value="true" />
+    <param name="RollingStyle" value="Date" />
+    <param name="DatePattern" value="yyyy.MM.dd" />
+    <param name="StaticLogFileName" value="true" />
+    <layout type="log4net.Layout.PatternLayout,log4net">
+      <param name="ConversionPattern" value="%d [%t] %m%n" />
+    </layout>
+  </appender>
+  <appender name="CallReportAppender" type="log4net.Appender.RollingFileAppender,log4net" >
+    <param name="File" value="..\Logs\Server1\CallReport\Yellow.Server.CallReport.log" />
+    <param name="AppendToFile" value="true" />
+    <param name="RollingStyle" value="Date" />
+    <param name="DatePattern" value="yyyy.MM.dd" />
+    <param name="StaticLogFileName" value="true" />
+    <layout type="log4net.Layout.PatternLayout,log4net">
+      <param name="ConversionPattern" value="%d [%t] %m%n" />
+    </layout>
+  </appender>
+  <appender name="C6Appender" type="log4net.Appender.RollingFileAppender,log4net" >
+    <param name="File" value="Logs\C6\Yellow.Server.C6.log" />
+    <param name="AppendToFile" value="true" />
+    <param name="RollingStyle" value="Date" />
+    <param name="DatePattern" value="yyyy.MM.dd" />
+    <param name="StaticLogFileName" value="true" />
+    <layout type="log4net.Layout.PatternLayout,log4net">
+      <param name="ConversionPattern" value="%d [%t] %m%n" />
+    </layout>
+  </appender>
+  <appender name="console" type="log4net.Appender.ColoredConsoleAppender">
+    <mapping>
+      <level value="ERROR" />
+      <foreColor value="White" />
+      <backColor value="Red, HighIntensity" />
+    </mapping>
+    <layout type="log4net.Layout.PatternLayout,log4net">
+      <param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/>
+    </layout>
+  </appender>
+  <appender name="SmtpAppender" type="log4net.Appender.SmtpAppender">
+    <to value="yellow.errors@softwaremind.pl" />
+    <from value="errors@softwaremind.pl" />
+    <port value="25" />
+    <subject value="[Yellow-error][SM_CAT_Generated][Server]" />
+    <smtpHost value="mail.ailleron.com" />
+    <bufferSize value="1" />
+    <lossy value="false" />
+    <threshold value="ERROR"/>
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%newline%date [%thread] %-5level %logger [%property{NDC}] - %message%newline%newline%newline" />
+    </layout>
+    <filter type="Yellow.ApplicationServices.Infrastructure.Logging.ThrottlingFilter, Yellow.ApplicationServices">
+      <!--Stop sending emails when more than 20 same messages happen in up to one hour -->
+      <TimeLimit value="3600" />
+      <OccurrencesLimit value="20" />
+      <MonitorFromLevel value="ERROR" />
+      <MessageLimitsReachedNotificationEnabled value="true" />
+      <MessageLimitsReachedNotificationRecipientEmail value="yellow.errors@softwaremind.pl" />
+      <MessageLimitsReachedNotificationFromEmail value="errors@softwaremind.pl" />
+    </filter>
+  </appender>
+  <appender name="AllLevelsSmtpAppender" type="log4net.Appender.SmtpAppender">
+    <to value="yellow.errors@softwaremind.pl" />
+    <from value="errors@softwaremind.pl" />
+    <port value="25" />
+    <subject value="[Yellow-error][SM_CAT_Generated][Server]" />
+    <smtpHost value="mail.ailleron.com" />
+    <bufferSize value="1" />
+    <lossy value="false" />
+    <layout type="log4net.Layout.PatternLayout">
+      <conversionPattern value="%newline%date [%thread] %-5level %logger [%property{NDC}] - %message%newline%newline%newline" />
+    </layout>
+  </appender>
+  <root>
+    <!-- Value of priority may be ALL, DEBUG, INFO, WARN, ERROR, FATAL, OFF -->
+    <priority value="DEBUG"/>
+    <appender-ref ref="ApplicationServer"/>
+    <appender-ref ref="console"/>
+    <appender-ref ref="SmtpAppender"/>
+  </root>
+  <logger name="MultiLogger">
+    <priority value="INFO" />
+  </logger>
+  <logger name="Yellow.ApplicationServices.CreditReports.Communication.Contracts.Soap_Logger" additivity="false">
+    <priority value="DEBUG" />
+    <appender-ref ref="CallReportAppender" />
+  </logger>
+  <!--Logger of RAW messages for particular endpoint. Name of logger should be defined in convention: client -> endpoint-> contractName + suffix "_Logger"-->
+  <logger name="Yellow.Server.Services.BizAgi.DisputeStatusUpdateService_Logger" additivity="false">
+    <priority value="DEBUG" />
+    <appender-ref ref="ServiceBizagiAppender" />
+    <appender-ref ref="console" />
+  </logger>
+  <!--Logger of RAW messages for particular endpoint. Name of logger should be defined in convention: client -> endpoint-> contractName + suffix "_Logger"-->
+  <logger name="Yellow.Server.Jobs.DisputeProcessing.BizAgi.WorkflowEngineSOASoap_Logger" additivity="false">
+    <priority value="DEBUG" />
+    <appender-ref ref="BizAgiAppender" />
+  </logger>
+  <logger name="NHibernate">
+    <level value="WARN" />
+  </logger>
+  <logger name="NHibernate.SQL">
+    <level value="WARN" />
+  </logger>
+  <logger name="Quartz.Job.FileScanJob" additivity="false">
+    <priority value="INFO" />
+    <appender-ref ref="console" />
+  </logger>
+  <logger name="Quartz.Core.JobRunShell">
+    <priority value="INFO" />
+    <appender-ref ref="console" />
+  </logger>
+  <logger name="C6Logger" additivity="false">
+    <priority value="DEBUG" />
+    <appender-ref ref="C6Appender" />
+  </logger>
+</log4net>

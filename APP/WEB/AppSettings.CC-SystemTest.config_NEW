@@ -18,7 +18,7 @@
   <add key="App_NoddleSignature" value="The Noddle Team"/>
   <add key="App_NoddleShowSocialMediaInEmail" value="true"/>
   <add key="App_HalifaxDomainName" value="https://dev.halifaxcreditchecker.co.uk"/>
-  <add key="App_HalifaxHostName" value="dev.halifaxcreditchecker.co.uk"/>
+  <add key="App_HalifaxHostName" value="test.halifaxcreditchecker.co.uk"/>
   <add key="App_HalifaxPageName" value="Halifax Credit Checker"/>
   <add key="App_HalifaxPageNameWithPoweredSuffix" value="Halifax Credit Checker, powered by Noddle"/>
   <add key="App_HalifaxAccountName" value="Halifax Credit Checker account"/>
@@ -46,21 +46,21 @@
   <add key="App_SavThinFileAccountName" value="Noddle Credit Coach account"/>
   <add key="App_TescoPageNameWithPoweredSuffix" value="Noddle, brought to you by Tesco Bank"/>
   <add key="App_TescoAccountName" value="Tesco Bank Noddle account"/>
-  <add key="Service_DisplayPrefix" value="Yellow"/>
-  <add key="Service_ServiceName" value="Yellow_Debug_Service"/>
+  <add key="Service_DisplayPrefix" value="Noddle"/>
+  <add key="Service_ServiceName" value="Noddle_Service"/>
   <add key="CreditReport_DayOfMonthToSwitchAccount" value="1" />
   <add key="CreditReport_DayOfMonthToChangePasswordForDormantAccount" value="15" />
   <add key="CreditReport_EnableAutomaticApiCredentialsUpdates" value="false" />
-  <add key="CreditReport_PasswordChangedAlertRecipients" value="yellow@softwaremind.pl"/>
-  <add key="CreditReport_CredentialsSwitchedAlertRecipients" value="yellow@softwaremind.pl"/>
+  <add key="CreditReport_PasswordChangedAlertRecipients" value="NoddleSupport@callcreditgroup.com"/>
+  <add key="CreditReport_CredentialsSwitchedAlertRecipients" value="NoddleSupport@callcreditgroup.com"/>
   <add key="Disputes_SendingEmailsAboutUpdatingDisputesEnabled" value="false"/>
   <add key="Disputes_HideDisputesOlderThan" value="01-01-2014"/>
-  <add key="BizAgi_Domain" value="domain"/>
-  <add key="BizAgi_UserName" value="admon"/>
+  <add key="BizAgi_Domain" value="****"/>
+  <add key="BizAgi_UserName" value="****"/>
   <add key="BizAgi_CccAffiliateId" value="501"/>
   <add key="BizAgi_MaxDisputesPerJobRun" value="1000"/>
-  <add key="BizAgiUpdateServiceCredentials_UserName" value="test101"/>
-  <add key="BizAgiUpdateServiceCredentials_Password" value="1tset"/>
+  <add key="BizAgiUpdateServiceCredentials_UserName" value="****"/>
+  <add key="BizAgiUpdateServiceCredentials_Password" value="****"/>
   <add key="Signup_ActivateAccountTokenValidForHours" value="96"/>
   <add key="Signup_ForgotToActivatePeriodToRemindHours" value="96"/>
   <add key="WcfServerEngine_Enabled" value="true"/>
@@ -72,33 +72,33 @@
   <add key="SendWelcomeEmails_SecondEmailIntervalInDays" value="3"/>
   <add key="SendWelcomeEmails_ThirdEmailIntervalInDays" value="7" />
   <add key="SendWelcomeEmails_UsersInBatchLimit" value="1000" />
-  <add key="CallMonitor_AlertsDirectory" value="CallMonitor\Output"/>
-  <add key="CallMonitor_AlertsBackupDirectory" value="CallMonitor\OutputBackup"/>
-  <add key="CallMonitor_SubscriptionsChangesDirectory" value="CallMonitor\Input"/>
-  <add key="CallMonitor_SubscriptionsChangesBackupDirectory" value="CallMonitor\InputBackup"/>
+  <add key="CallMonitor_AlertsDirectory" value="D:\CallMonitor\CC\Output"/>
+  <add key="CallMonitor_AlertsBackupDirectory" value="D:\CallMonitor\CC\OutputBackup"/>
+  <add key="CallMonitor_SubscriptionsChangesDirectory" value="D:\CallMonitor\CC\Input"/>
+  <add key="CallMonitor_SubscriptionsChangesBackupDirectory" value="D:\CallMonitor\CC\InputBackup"/>
   <add key="CallMonitor_TriggerOutputFileNamePrefix" value="TriggerOutput"/>
   <add key="CallMonitor_TriggerOutputDetailFileNamePrefix" value="TriggerOutputDetail"/>
   <add key="CallMonitor_UsersToProcessLimit" value="10000"/>
   <add key="CallMonitor_NoAlertEmailAfterDays" value="30"/>
   <add key="UnsubscribeFromCallMonitor_BatchSize" value="1000"/>
   <add key="UnsubscribeFromCallMonitor_NumberOfBatches" value="25"/>
-  <add key="CallValidate_ThinFileInputDirectory" value="CallValidate\ThinFileInput"/>
-  <add key="CallValidate_ThinFileInputBackupDirectory" value="CallValidate\ThinFileInputBackup"/>
+  <add key="CallValidate_ThinFileInputDirectory" value="D:\CallValidate\CC\ThinFileInput"/>
+  <add key="CallValidate_ThinFileInputBackupDirectory" value="D:\CallValidate\CC\ThinFileInputBackup"/>
   <add key="CallValidate_ThinFileInputDaysToNotRevalidate" value="30"/>
   <add key="CallValidate_ThinFileInputBatchSize" value="2000"/> <!-- max: 2099. It's because of SQL limitation, see .cs file for more details. -->
-  <add key="CallValidate_ThinFileOutputDirectory" value="CallValidate\ThinFileOutput"/>
-  <add key="CallValidate_ThinFileOutputBackupDirectory" value="CallValidate\ThinFileOutputBackup"/>
+  <add key="CallValidate_ThinFileOutputDirectory" value="D:\CallValidate\CC\ThinFileOutput"/>
+  <add key="CallValidate_ThinFileOutputBackupDirectory" value="D:\CallValidate\CC\ThinFileOutputBackup"/>
   <add key="CallValidate_ThinFileOutputColumnSeparator" value="^"/>
   <add key="CallValidate_ThinFileOutputColumnsCount" value="350"/>
   <add key="CallValidate_ThinFileOutputReadingBatchSize" value="1000"/>
   <add key="WebMonitoring_AlertsMaxBatchSize" value="2000" />
   <add key="C6Output_ShouldExpectAlertsFromOtherEnvironments" value="true"/>
-  <add key="C6Output_AlertsDirectory" value="C6\Output" />
-  <add key="C6Output_AlertsInvalidDirectory" value="C6\OutputInvalid"/>
-  <add key="C6Output_ApiProviderServerUrl" value="http://localhost:51049/C6/GenerateSummaryReports" />
-  <add key="C6Output_PgpPrivateKeyDirectoryPath" value="..\..\..\..\tools\Pgp"/>
-  <add key="C6Output_PgpPrivateKeyFileName" value="noddlepriv-local.asc"/>
-  <add key="C6Output_PgpPrivateKeyPassword" value="V~k|Y.e_+_G=xerv^v6HMTQDm;^Vdp"/>
+  <add key="C6Output_AlertsDirectory" value="D:\C6\Noddle\Output"/>
+  <add key="C6Output_AlertsInvalidDirectory" value="D:\C6\Noddle\Failed"/>
+  <add key="C6Output_ApiProviderServerUrl" value="****"/>
+  <add key="C6Output_PgpPrivateKeyDirectoryPath" value="D:\C6\Noddle"/>
+  <add key="C6Output_PgpPrivateKeyFileName" value="****"/>
+  <add key="C6Output_PgpPrivateKeyPassword" value="****"/>
   <add key="C6Output_ShouldExpectAlertsFromOtherEnvironments" value="true"/>
   <add key="C6Output_Timeout" value="600000" />
   <add key="SendWebWatchActivationReminder_ActivationReminderEmailAfterDays" value="7"/>
@@ -130,12 +130,12 @@
   <add key="ConfigEncryption_Enabled" value="true"/>
   <add key="CopyConsentStatementsFromUsers_BatchSize" value="2000" />
   <add key="CopyConsentStatementsFromUsers_NumberOfBatches" value="5" />
-  <add key="WorldPay_BaseUrl" value="****"/>
+  <add key="WorldPay_BaseUrl" value="https://api.worldpay.com/v1" />
   <add key="WorldPay_ServiceKey" value="****"/>
   <add key="ProcessSubscriptions_DaysToWaitForRetry" value="2" />
   <add key="ProcessSubscriptions_MaxTechnicalProblemsBeforeStopingJob" value="100" />
   <add key="CardExpiry_FirstNotificationDaysBeforeExpiryCount" value="14" />
-  <add key="Api_BaseAddress" value="http://localhost:8080/" />
+  <add key="Api_BaseAddress" value="http://localhost:18001/"/>
   <add key="CardExpiry_SecondNotificationDaysBeforeExpiryCount" value="3" />
   <add key="WebMonitoring_ApiProviderEnabled" value="true" />
   <add key="WebMonitoring_ApiProviderServerUrl" value="****"/>
