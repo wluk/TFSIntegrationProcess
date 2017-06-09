@@ -71,6 +71,6 @@ Write-Host "Transforms source_binaries with configuration related to target envi
 # #$WebsiteTestClient
 # $sourceDir = "C:\Users\luwe\Desktop\transform"
 
-Write-Host $env:Build.SourcesDirectory 
+Write-Host $env:Build_SourcesDirectory 
 
 SetTypeTransformFiles $webConfigType
