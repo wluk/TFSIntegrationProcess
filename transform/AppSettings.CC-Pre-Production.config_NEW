@@ -1,0 +1,293 @@
+﻿<?xml version="1.0"?>
+<appSettings>
+  <add key="Toggle_TrustpilotWidgetOn" value="false"/>
+  <add key="Toggle_RefactoredBrandApplyingOn" value="false"/>
+  <add key="Toggle_AccountActivateNewBrandingMechanismOn" value="false"/>
+  <add key="Toggle_NewDaySwitchAccountOn" value="true"/>
+  <add key="MigrationCompareTag" value="OLD" />
+  <add key="webpages:Version" value="3.0.0.0" />
+  <add key="webpages:Enabled" value="false" />
+  <add key="PreserveLoginUrl" value="true" />
+  <add key="aspnet:MaxHttpCollectionKeys" value="10000" />
+  <add key="ClientValidationEnabled" value="true"/>
+  <add key="UnobtrusiveJavaScriptEnabled" value="true"/>
+  <!--<add key="nhibernate-logger" value="NHibernate.Glimpse.LoggerFactory, NHibernate.Glimpse"/>-->
+  <!--<add key="NHibernate.Glimpse.Loggers" value="command"/>-->
+  <!-- all loggers: "command,connection,flush,load,transaction-->
+  <add key="App_MultiThirdPartyConsentStatementsEnabled" value="true" />
+  <add key="App_MultiRoyalMailConsentStatementsEnabled" value="true" />
+  <add key="App_EnvironmentName" value="CL_Staging"/>
+  <add key="App_EnvironmentComponent" value="Web"/>
+  <add key="App_EnvironmentDescriptor" value="NODDLECLS"/>
+  <add key="App_SendImmediatelyUsingMethod" value="QueueSend"/>
+  <add key="App_NumberOfServers" value="3"/>
+  <add key="App_ExpectedAspNetMvcVersion" value="5.2.3.0"/>
+  <add key="App_ThawteDynamicLogoEnabled" value="true"/>
+  <add key="App_EnvironmentForUITests" value="false"/>
+  <add key="App_NoddleDomainName" value="https://test.noddle.co.uk"/>
+  <add key="App_NoddleHostName" value="test.noddle.co.uk"/>
+  <add key="App_NoddleThawteRegisteredDomain" value="test.noddle.co.uk"/>
+  <add key="App_NoddlePageName" value="Noddle"/>
+  <add key="App_NoddleAccountName" value="Noddle account"/>
+  <add key="App_NoddleThinFileAccountName" value="Noddle Credit Coach account"/>
+  <add key="App_NoddleContactEmail" value="contact@noddle.co.uk"/>
+  <add key="App_NoddleDisputeEmail" value="dispute@noddle.co.uk"/>
+  <add key="App_NoddlePasswordEmail" value="password@noddle.co.uk"/>
+  <add key="App_NoddleNoReplyEmail" value="noreply@noddle.co.uk"/>
+  <add key="App_NoddleSignature" value="The Noddle Team"/>
+  <add key="App_NoddleShowSocialMediaInEmail" value="true"/>
+  <add key="App_NoddleShowLinkCreditCardsAndLoansInMenuAndFooter" value="true"/>
+  <add key="App_HalifaxDomainName" value="https://test.halifaxcreditchecker.co.uk"/>
+  <add key="App_HalifaxHostName" value="test.halifaxcreditchecker.co.uk"/>
+  <add key="App_HalifaxThawteRegisteredDomain" value="test.halifaxcreditchecker.co.uk"/>
+  <add key="App_HalifaxPageName" value="Halifax Credit Checker"/>
+  <add key="App_HalifaxPageNameWithPoweredSuffix" value="Halifax Credit Checker, powered by Noddle"/>
+  <add key="App_HalifaxAccountName" value="Halifax Credit Checker account"/>
+  <add key="App_HalifaxThinFileAccountName" value="Halifax Credit Builder account"/>
+  <add key="App_HalifaxContactEmail" value="halifaxcontact@noddle.co.uk"/>
+  <add key="App_HalifaxDisputeEmail" value="dispute@noddle.co.uk"/>
+  <add key="App_HalifaxPasswordEmail" value="halifaxpassword@noddle.co.uk"/>
+  <add key="App_HalifaxNoReplyEmail" value="halifaxnoreply@noddle.co.uk"/>
+  <add key="App_HalifaxSignature" value="The Noddle Team on behalf of Halifax"/>
+  <add key="App_HalifaxShowSocialMediaInEmail" value="false"/>
+  <add key="App_RoyalMailDomainName" value="https://test.lovemyid.royalmail.com/"/>
+  <add key="App_RoyalMailHostName" value="test.lovemyid.royalmail.com"/>
+  <add key="App_RoyalMailThawteRegisteredDomain" value="test.lovemyid.royalmail.com"/>
+  <add key="App_RoyalMailPageName" value="Love My ID"/>
+  <add key="App_RoyalMailPageNameWithPoweredSuffix" value="Love My ID"/>
+  <add key="App_RoyalMailAccountName" value="Love My ID account"/>
+  <add key="App_RoyalMailContactEmail" value="subscriberservices@royalmail.com"/>
+  <add key="App_RoyalMailDisputeEmail" value="dispute@test.lovemyid.royalmail.com"/>
+  <add key="App_RoyalMailPasswordEmail" value="subscriberservices@royalmail.com"/>
+  <add key="App_RoyalMailNoReplyEmail" value="noreply.test.lovemyid@royalmail.com"/>
+  <add key="App_RoyalMailSignature" value="The Love My ID Team"/>
+  <add key="App_RoyalMailShowSocialMediaInEmail" value="false"/>
+  <add key="App_RoyalMailMVPPriceInPence" value="399"/>
+  <add key="App_RoyalMailMVPTrialPediodDurationDays" value="30"/>
+  <add key="App_NationWideContactEmail" value="nationwidecontact@noddle.co.uk"/>
+  <add key="App_SavPageName" value="aqua Credit Checker"/>
+  <add key="App_SavPageNameWithPoweredSuffix" value="aqua Credit Checker, powered by Noddle"/>
+  <add key="App_SavAccountName" value="aqua Credit Checker account"/>
+  <add key="App_SavThinFileAccountName" value="Noddle Credit Coach account"/>
+  <add key="App_TescoPageNameWithPoweredSuffix" value="Noddle, brought to you by Tesco Bank"/>
+  <add key="App_TescoAccountName" value="Tesco Bank Noddle account"/>
+  <add key="App_CreditCardsForceUserToUpdateRequirementsAfterDays" value="30"/>
+  <add key="App_LoansForceUserToUpdateRequirementsAfterDays" value="30"/>
+  <add key="App_CIFASDictionariesRelativePath" value="bin/CIFASDictionaries"/>
+  <add key="App_RedesignedCreditReportEnabled" value="true"/>
+  <add key="App_CallcreditCopyrightFullName" value="Callcredit Consumer Limited"/>
+  <add key="App_SearchEnginesIndexingEnabled" value="true"/>
+  <add key="App_BlueKaiTrackingEnabled" value="true"/>
+  <add key="App_PreventOpenRedirection" value="false"/>
+  <add key="App_UrlsAllowedToDisplayInIframe" value="/external/totallymoneyheader/"/>
+  <add key="Bench_BenchDirectory" value="bin\\Assets\\Bench" />
+  <add key="Gtm_Enabled" value="true"/>
+  <add key="Gtm_OptimizelyScriptEnabled" value="true" />
+  <add key="Gtm_OptimizelyScriptUrl" value="https://cdn.optimizely.com/js/7075962427.js" />
+  <add key="Gtm_NoddleCode" value="****"/>
+  <add key="Gtm_HalifaxCode" value="****"/>
+  <add key="TrustPilotWidget_Enabled" value="true" />
+  <add key="Tealium_Enabled" value="true"/>
+  <add key="Tealium_ScriptUrl" value="//tags.tiqcdn.com/utag/royalmail/main/qa/utag.js"/>
+  <add key="GoSquared_Enabled" value="false" />
+  <add key="GoSquared_Code" value="****"/>
+  <add key="Signal_Enabled" value="false" />
+  <add key="Signal_SiteId" value="****"/>
+  <add key="AdminArea_Enabled" value="true"/>
+  <add key="Diagnostics_EnableWebServerInstanceInfoHeader" value="false"/>
+  <add key="CreditReport_MaxDaysOfReportValidity" value="30" />
+  <add key="Disputes_FraudAlertsEnabled" value="true"/>
+  <add key="Disputes_FraudAlertsKeywords" value="fraud,stolen,theft" />
+  <add key="Disputes_FraudAlertsRecipients" value="Noddle_Fraud_Alerts@callcreditgroup.com"/>
+  <add key="Disputes_EnableAutoAccepting" value="true" />
+  <add key="Disputes_AutoAcceptedCodes" value="101,102,201,202,203,204,205,206,207,209,210,301,401,501,502,503,504,505,506,507,508,510,601,602,604,605,606,607,609,610,611,701,702,703,704,705,706,707,709,710,802,803,901,902,903,904,905,906,907,909,910,1101,1102,1105,1107,1201,1202,1203,1204,1205,1207,1208,1209,1210,1211,1213,1214,1215,1216,1217,1218,1221,1222" />
+  <add key="Disputes_EnableAutoRejectingDisputeOfDoesntBelongToMeType" value="true"/>
+  <add key="Disputes_EnableDuplicateDisputeAutoComplete" value="true" />
+  <add key="Disputes_DuplicateDisputePeriodInMonths" value="6" />
+  <add key="Disputes_EnableAccountRemovalAutoComplete" value="true" />
+  <add key="Disputes_EnableDisallowDuplicateDisputeHandler" value="true" />
+  <add key="Disputes_EnableDefaultedAccountWithInsolvencyAutoComplete" value="true" />
+  <add key="Disputes_EnableCreditFileRequestSearchAutoComplete" value="true" />
+  <add key="Disputes_EnableAddressLinksAutoComplete" value="true" />
+  <add key="Disputes_DisallowDuplicateDisputeOlderThanDays" value="28" />
+  <add key="Disputes_DisallowDuplicateDisputeForModaOlderThanDays" value="14" />
+  <add key="Disputes_DaysToResolveDispute" value="28" />
+  <add key="Disputes_DaysToResolveDisputeForModa" value="14" />
+  <add key="Disputes_EnableDisputeItemDetailsForClosedSatisfiedAndOpenAccountsFilter" value="true" />
+  <add key="Disputes_RaisedDisputesDayCount" value="28" />
+  <add key="Disputes_RaisedDisputesLimit" value="20"/>
+  <add key="Disputes_HideDisputesOlderThan" value="01-01-2014"/>
+  <add key="Disputes_DisallowDisputingWithUserGivenDateWithinDays" value="56"/>
+  <add key="TM_LoansServiceUrl" value="****"/>
+  <add key="TM_LoansServiceAccessHeaderKey" value="****"/>
+  <add key="TM_LoansServiceAccessHeaderValue" value="****"/>
+  <add key="TM_LoansPersonalizedUrlTemplate" value="****"/>
+  <add key="TM_LoansNotPersonalizedUrl" value="****"/>
+  <add key="TM_SecuredLoansScoreIdProviderName" value="****"/>
+  <add key="TM_CreditCardsServiceUrl" value="****"/>
+  <add key="TM_CreditCardsServiceAccessHeaderKey" value="****"/>
+  <add key="TM_CreditCardsServiceAccessHeaderValue" value="****"/>
+  <add key="TM_CreditCardsNotPersonalizedUrl" value="****"/>
+  <add key="TM_CreditCardsPersonalizedUrlTemplate" value="****"/>
+  <add key="TM_CreditCardsPersonalizedUrlTemplateForCardsBannerOnFai" value="****"/>
+  <add key="TM_LoansV3ScoreIdProviderName" value="TMV3"/>
+  <add key="TM_LoansV4ScoreIdProviderName" value="TMV4"/>
+  <add key="TM_CreditCardsV3ScoreIdProviderName" value="TMV3"/>
+  <add key="TM_LoansV4ServiceUrl" value="****"/>
+  <add key="TM_LoansV4ServiceEnabled" value="true"/>
+  <add key="AccountRecovery_RecoveryTokenValidityTimeInHours" value="96"/>
+  <add key="Email_BlockChangingInFirstHours" value="24"/>
+  <add key="EnergySwitch_RegisteredMembersStartingCount" value="176"/>
+  <add key="EnergySwitch_RegistrationStartingDate" value="4-10-2016"/>
+  <add key="EnergySwitch_SwitchingStartingDate" value="1-11-2016"/>
+  <add key="EnergySwitch_ClosedStartingDate" value="30-11-2016"/>
+  <add key="DistributedEnvironment_CacheControllerUrlPart" value="dfasdl5ozxelasplc2543ps"/>
+  <add key="DistributedEnvironment_AllWebServersInternalUrls" value="http://172.17.204.8,http://172.17.204.7,http://172.17.204.6"/>
+  <add key="Signin_MaxInvalidLoginAttempts" value="3"/>
+  <add key="Signin_DashboardMessageRules" value="[&#xD;&#xA;       {&quot;Code&quot;:&quot;Welcome_vTesco&quot;},&#xD;&#xA;       {&quot;Code&quot;:&quot;Welcome_vTescoStaff&quot;},&#xD;&#xA;       {&quot;Code&quot;:&quot;Welcome_vSavCardHolders&quot;},&#xD;&#xA;       {&quot;Code&quot;:&quot;Welcome_vHalifaxThinFile&quot;},&#xD;&#xA;       {&quot;Code&quot;:&quot;Welcome_vHalifax&quot;},&#xD;&#xA;       {&quot;Code&quot;:&quot;Welcome_vThinFile&quot;},&#xD;&#xA;       {&quot;Code&quot;:&quot;Welcome_vBrandingWithoutFP&quot;},&#xD;&#xA;       {&quot;Code&quot;:&quot;Welcome_Standard&quot;},&#xD;&#xA;       {&quot;Code&quot;:&quot;FreeCreditScore&quot;},&#xD;&#xA;       {&quot;Code&quot;:&quot;Welcome_vMay2015First&quot;},&#xD;&#xA;       {&quot;Code&quot;:&quot;Welcome_vMay2015Second&quot;},&#xD;&#xA;       {&quot;Code&quot;:&quot;Welcome_vMay2015Third&quot;}&#xD;&#xA;       ]"/>
+  <add key="Signin_ShowFreeCreditScoreMessageForUsersSignedUpBefore" value="6-7-2015" />
+  <add key="Signup_ActivateAccountTokenValidForHours" value="96"/>
+  <add key="Signup_UserCountThresholdForBlockade" value="20000"/>
+  <add key="Signup_SinceHowManyMinutesCountRegistrationsForBlockade" value="60"/>
+  <add key="Signup_EnableXYHack" value="true"/>
+  <add key="Signup_EnableBlockingSignUpWithTheSameEmail" value="true"/>
+  <add key="Signup_MaxNumberOfSignUpAttemptsWithSameEmail" value="1"/>
+  <add key="Signup_SinceHowManyHoursCheckDuplicatedEmailsInIVRs" value="72"/>
+  <add key="CredentialsValidation_UsernameValidationAgainstOwnNamesEnabled" value="true"/>
+  <add key="CredentialsValidation_PasswordValidationAgainstOwnNamesEnabled" value="true"/>
+  <add key="CredentialsValidation_UsernameValidationAgainstBlacklistEnabled" value="true"/>
+  <add key="CredentialsValidation_PasswordValidationAgainstBlacklistEnabled" value="true"/>
+  <add key="CredentialsValidation_UsernameAsEmailEnabled" value="true"/>
+  <add key="CredentialsValidation_UsernameBlacklist"
+  	value="Oliver,Jack,Charlie,Harry,Oscar,Thomas,Jacob,Ethan,Noah,James,William,Joshua,George,Leo,Max,Henry,Alfie,Lucas,Daniel,Dylan,Finley,Alexander,Freddie,Isaac,Samuel,Joseph,Archie,Muhammad,Benjamin,Lewis,Logan,Matthew,Sebastian,Jake,Edward,Zachary,Aidan,Luke,Mason,Riley,Ryan,Elliott,Toby,Reuben,Adam,Theo,Connor,Nathan,Jayden,Liam,Patrick,Harrison,Sam,Michael,Ollie,Zac,Arthur,Luca,Ben,Finn,Elijah,Alex,Tyler,Jamie,Blake,Rhys,David,Caleb,Callum,Jackson,Harvey,Felix,Jenson,Jude,Aaron,Cameron,Tommy,Hugo,Brody,Evan,Gabriel,Dexter,Austin,Nicholas,Seth,Harley,Owen,Stanley,Nathaniel,Rowan,Rory,Teddy,Jason,Hayden,Tristan,Josh,Jasper,Bobby,Frankie,Tom,Lily,Emily,Isabella,Sophia,Isabelle,Sophie,Olivia,Ava,Chloe,Isla,Amelia,Jessica,Grace,Evie,Charlotte,Ella,Mia,Lucy,Freya,Ruby,Holly,Ellie,Hannah,Emma,Abigail,Megan,Jasmine,Daisy,Matilda,Erin,Poppy,Imogen,Maisie,Layla,Phoebe,Eva,Molly,Maya,Scarlett,Annabelle,Alice,Sienna,Amelie,Lola,Caitlin,Amy,Madison,Katie,Zoe,Florence,Elisabeth,Amber,Summer,Rosie,Emilia,Rebecca,Leah,Evelyn,Millie,Esme,Eleanor,Willow,Georgia,Zara,Lacey,Anna,Rose,Lexie,Eliza,Lauren,Bella,Elsie,Eloise,Sarah,Martha,Keira,Faith,Niamh,Gracie,Gabriella,Skye,Harriet,Kayla,Alyssa,Maria,Nicole,Nina,Paige,Kate,Orla,Bethany,Iris,Alexandra,Kitty,Eve,Lottie,Seren,Libby,Angel,Eden"/>
+  <add key="CredentialsValidation_PasswordBlacklist"
+  	value="password,password1,qwerty,abc123,welcome,iloveyou,welcome1,admin,letmein,mustang,monkey,princess,sunshine,superman ,batman,master,Lauren,apple,pa#sword,smith,money,Pa$$w0rd,dragon,trustno1,master"/>
+  <add key="Kba_QuestionsSorter" value="Random"/>
+  <add key="Kba_ComputationAlgorithm" value="MaximumWins"/>
+  <add key="Kba_ScoreLevels" value="[{&quot;Score&quot;:20,&quot;QuestionsToAsk&quot;:4,&quot;RequiredCorrectAnswers&quot;:3},{&quot;Score&quot;:30,&quot;QuestionsToAsk&quot;:4,&quot;RequiredCorrectAnswers&quot;:2}]"/>
+  <add key="Kba_DefaultMaxQuestionsToAsk" value="1"/>
+  <add key="Kba_DefaultMinCorrectAnswers" value="2"/>
+  <add key="Kba_CVAllowedFailureMaxQuestionsToAsk" value="6"/>
+  <add key="Kba_CVAllowedFailureMinCorrectAnswers" value="5"/>
+  <add key="Kba_AllowProgressForSavDeclinedUsersThinFile" value="true"/>
+  <add key="Kba_AllowProgressForSavCardHoldersThinFile" value="true"/>
+  <add key="Kba_CardNumberPrefixBlacklist" value=""/>
+  <add key="Kba_BlacklistedCardNumberMaxQuestionsToAsk" value="6"/>
+  <add key="Kba_BlacklistedCardNumberMinCorrectAnswers" value="5"/>
+  <add key="Kba_BlacklistedEmailMaxQuestionsToAsk" value="20"/>
+  <add key="Kba_BlacklistedEmailMinCorrectAnswers" value="19"/>
+  <add key="Kba_BlacklistedIpLevel1MaxQuestionsToAsk" value="6"/>
+  <add key="Kba_BlacklistedIpLevel1MinCorrectAnswers" value="5"/>
+  <add key="Kba_BlacklistedIpLevel2MaxQuestionsToAsk" value="20"/>
+  <add key="Kba_BlacklistedIpLevel2MinCorrectAnswers" value="19"/>
+  <add key="CallValidate_ServiceUrl" value="****"/>
+  <add key="CallValidate_Company" value="****"/>
+  <add key="CallValidate_Username" value="****"/>
+  <add key="CallValidate_Password" value="****"/>
+  <add key="CallValidate_Application" value="****"/>
+  <add key="CallValidate_Timeout" value="30000"/>
+  <add key="Spl_ProductKey" value="****"/>
+  <add key="Spl_GetAllAddressesByPostcodeUrlFormat" value="****"/>
+  <add key="Spl_GetAddressByIdUrlFormat" value="****"/>
+  <add key="Spl_TestPostcodesEnabled" value="true"/>
+  <!-- beware that both price settings are not used in all places.. rest is hardcoded. 
+  So either, remove those settings or remove hardcoded values-->
+  <add key="NoddleImprove_PricePerYear" value="30"/>
+  <add key="NoddleImprove_PurchaseTokenValidForHours" value="24"/>
+  <add key="NoddleImprove_HandlePaymentUrl" value="/Payments/NoddleImproveHandlePayment" />
+  <add key="NoddleImprove_HandleExpiredPaymentUrl" value="/" />
+  <add key="NoddleImprove_MessagesToShowCount" value="3" />
+  <add key="NoddleImprove_ShowTriggersFromLastMonths" value="6" />
+  <add key="NoddleImprove_DaysLeftToStopWarningAboutNextBuy" value="30" />
+  <!-- Usually, we would place this value as below - with empty string as default. However, ConceptCode is an enum and castle DA has troubles parsing 
+  empty string to enum collection. Therefore, it is removed here and in transformations, we use 'insert' instead of regular 'replace'.
+  <add key="NoddleImprove_SuppressedConceptCodes" value=""/>-->
+  <add key="NoddleAlerts_PricePerYear" value="20"/>
+  <add key="NoddleAlerts_PurchaseTokenValidForHours" value="24"/>
+  <add key="NoddleAlerts_HandlePaymentUrl"  value="/Payments/NoddleAlertsHandlePayment" />
+  <add key="NoddleAlerts_HandleExpiredPaymentUrl" value="" />
+  <add key="NoddleAlerts_DaysLeftToStopWarningAboutNextBuy" value="30" />
+  <add key="NoddleWebWatch_PricePerYear" value="20"/>
+  <add key="NoddleWebWatch_PurchaseTokenValidForHours" value="24"/>
+  <add key="NoddleWebWatch_HandlePaymentUrl"  value="/Payments/NoddleWebWatchHandlePayment" />
+  <add key="NoddleWebWatch_HandleExpiredPaymentUrl" value="" />
+  <add key="NoddleWebWatch_DaysLeftToStopWarningAboutNextBuy" value="30" />
+  <add key="NoddleIdentityProtection_PricePerYear" value="30"/>
+  <add key="NoddleIdentityProtection_PurchaseTokenValidForHours" value="24"/>
+  <add key="NoddleIdentityProtection_HandlePaymentUrl"  value="/Payments/NoddleIdentityProtectionHandlePayment" />
+  <add key="NoddleIdentityProtection_HandleExpiredPaymentUrl" value="" />
+  <add key="NoddleIdentityProtection_DaysLeftToStopWarningAboutNextBuy" value="30" />
+  <add key="NoddlePremiumPackage_PricePerYear" value="45"/>
+  <add key="NoddlePremiumPackage_PurchaseTokenValidForHours" value="24"/>
+  <add key="NoddlePremiumPackage_HandlePaymentUrl" value="/Payments/NoddlePremiumPackageHandlePayment" />
+  <add key="NoddlePremiumPackage_HandleExpiredPaymentUrl" value="" />
+  <add key="NoddlePremiumPackage_DaysLeftToStopWarningAboutNextBuy" value="30" />
+  <add key="Datacash_ServerUrl" value="****"/>
+  <add key="Datacash_Username" value="****"/>
+  <add key="Datacash_Password" value="****"/>
+  <add key="Datacash_DesktopPageSetId" value="604" />
+  <add key="Datacash_MobilePageSetId" value="2351" />
+  <add key="PayPal_Username" value="****"/>
+  <add key="PayPal_Password" value="****"/>
+  <add key="PayPal_Signature" value="****"/>
+  <add key="PayPal_CancelUrl" value="" />
+  <add key="PayPal_PaymentFormUrl" value="****"/>
+  <add key="PayPal_RedirectToPayPalUrl" value="****"/>
+  <add key="Partners_CashGenieEnabled" value="false"/>
+  <add key="Partners_AsdaCustomersEnabled" value="true" />
+  <add key="Partners_SavDeclinedUsersEnabled" value="true" />
+  <add key="Partners_SavCardHoldersEnabled" value="true" />
+  <add key="Partners_TestDesktopEnabled" value="false"/>
+  <add key="Partners_NationwideEnabled" value="true" />
+  <add key="Partners_HSBCEnabled" value="true" />
+  <add key="Banners_CreditReportAdvertisingSlotsEnabled" value="true" />
+  <add key="Banners_UnderCRSummarySlotEnabled" value="true" />
+  <add key="Banners_FinancialProductsAdvertisingSlotsEnabled" value="true" />
+  <add key="Banners_DoNotShowAnyBannersToTheseUsers" value=""/>
+  <add key="Banners_DashboardUnderFinancialProductsSlotEnabled" value="true" />
+  <add key="Banners_DashboardUnderCRSummaryFifthSlotEnabled" value="true" />
+  <add key="IFailproofNHInitialization_Enabled" value="true" />
+  <add key="IFailproofNHInitialization_WhenFailedRetryEveryMinutes" value="5" />
+  <add key="Sav_MaxDaysOfTokenValidity" value="30" />
+  <add key="Sav_SenderEmailAddress" value="aquaCreditChecker@noddle.co.uk"/>
+  <add key="Tesco_TokensCountMaxLimit" value="20000" />
+  <add key="Nationwide_TokensCountMaxLimit" value="20000" />
+  <add key="ConfigEncryption_Enabled" value="true"/>
+  <add key="Redesign_MinDesktopViewBreakpoint" value="780" />
+  <add key="WorldPay_BaseUrl" value="****"/>
+  <add key="WorldPay_ServiceKey" value="****"/>
+  <add key="WorldPay_ClientKey" value="****"/>
+  <add key="WorldPay_ThreeDSecureMock" value="****"/>
+  <add key="WebMonitoring_ApiProviderEnabled" value="true" />
+  <add key="WebMonitoring_ApiProviderServerUrl" value="****"/>
+  <add key="WebMonitoring_MaxItemsAmount" value="10" />
+  <add key="WebMonitoring_AlertsMaxBatchSize" value="2000" />
+  <add key="WebMonitoring_ApiProviderPartnerId" value="44" />
+  <add key="WebMonitoring_ApiProviderDefaultUserFirstName" value="first_name" />
+  <add key="WebMonitoring_ApiProviderDefaultUserLastName" value="last_name" />
+  <add key="WebMonitoring_SendDeletedEmailEnabled" value="false" />
+  <add key="App_UseWorldPayClientMock" value="false"/>
+  <add key="App_UrlValidationModuleEnabled" value="false"/>
+  <add key="App_DisallowUsingIframe" value="true"/>
+  <add key="App_UseCustomRequireHttpsAttribute" value="false"/>
+  <add key="App_UseCallReport72Schema" value="true"/>
+  <add key="Signup_AddressNowIntegrationTest" value="true"/>
+  <add key="Signup_AddressNowIntegrationKey" value="tb36-cf12-rg75-uy93"/>
+  <add key="LEGALINFO_NoddleVisibilityEnabled" value="true"/>
+  <add key="LEGALINFO_EnabledBrandingList"
+  	value="ASDA, AsdaCustomers, SavDeclinedUsers, SavCardHolders, Halifax, Tesco, HalifaxThinFile, NoddleThinFile, TescoStaff, Nationwide, NationwideThinFile, RoyalMail, RBS, SavDeclinedUsersThinFile, SavCardHoldersThinFile"/>
+  <add key="LEGALINFO_DaysToMessageExpiration" value="180"/>
+  <add key="IDV_Enabled" value="false"/>
+  <add key="IDV_WorkflowId" value="34c53245-085a-4209-9611-cd6d0f05621a"/>
+  <add key="IDV_RetailerId" value="Noddle"/>
+  <add key="IDV_IdentityUrl" value="****"/>
+  <add key="IDV_EmailRiskUrl" value="****"/>
+  <add key="IDV_OcpApimSubscriptionKey" value="3ee5afc522be443f9c7e2f0920ab516a"/>
+  <add key="IDV_IdvUser" value="IdvUser"/>
+  <add key="IDV_IdvPassword" value="IdvPassword"/>
+  <add key="IDV_NotificationsUser" value="yellow"/>
+  <add key="IDV_NotificationsPassword" value="Pa$$w0rd"/>
+  <add key="IDV_IdentityRequestLimitEnabled" value="true"/>
+  <add key="IDV_IdentityRequestLimit" value="10000"/>
+  <add key="App_RedesignedNoddleAlertsEnabled" value="true" />
+</appSettings>
