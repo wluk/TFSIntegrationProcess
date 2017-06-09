@@ -54,26 +54,23 @@ function SetTypeTransformFiles($typesConfig) {
 
 Write-Host "Transforms source_binaries with configuration related to target environment"
 
-#Web
-$webConfigType = @("AppSettings", "log4net", "Web")
-#$Website
-$sourceDir = "C:\Users\luwe\Desktop\transform"
+# #Web
+# $webConfigType = @("AppSettings", "log4net", "Web")
+# #$Website
+# $sourceDir = "C:\Users\luwe\Desktop\transform"
+# SetTypeTransformFiles $webConfigType
+
+# #Server
+# $serverConfigType = @("AppSettings", "log4net", "Yellow.Server.exe", "quartz-job")
+# #$Website\Server
+# $sourceDir = "C:\Users\luwe\Desktop\transform"
+# SetTypeTransformFiles $webConfigType
+
+# #TestClient
+# $testClientConfigType = @("Web")
+# #$WebsiteTestClient
+# $sourceDir = "C:\Users\luwe\Desktop\transform"
+
+Write-Host $env:Build.SourcesDirectory 
+
 SetTypeTransformFiles $webConfigType
-
-#Server
-$serverConfigType = @("AppSettings", "log4net", "Yellow.Server.exe", "quartz-job")
-#$Website\Server
-$sourceDir = "C:\Users\luwe\Desktop\transform"
-SetTypeTransformFiles $webConfigType
-
-#TestClient
-$testClientConfigType = @("Web")
-#$WebsiteTestClient
-$sourceDir = "C:\Users\luwe\Desktop\transform"
-
-SetTypeTransformFiles $webConfigType
-
-#transform_config_files(ctt, server_sources_dir, dest_dir, "AppSettings.config", "AppSettings.#{vendor_code}-", ".config")
-
-
-
