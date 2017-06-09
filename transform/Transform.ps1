@@ -6,15 +6,15 @@
 # .NOTES
 # #>
 
-function SetTransformFiles($typesConfig, $path) {
-    foreach ($type in $typesConfig) {
+function SetTransformFiles($configTypes, $path) {
+    foreach ($configType in $configTypes) {
         if (Test-Path -Path $path) {
-            $filesConfig = Get-ChildItem -filter "$typeConfig.*.config" -File
+            $filesConfig = Get-ChildItem -filter "$configType.*.config" -File
 
             Write-Host "In path $path found: $filesConfig"
 
             foreach ($file in $filesConfig) {
-                TransformConfigFiles "$path\$typeConfig.config" $file.FullName
+                TransformConfigFiles "$path\$configType.config" $file.FullName
             }
         }
         else {
